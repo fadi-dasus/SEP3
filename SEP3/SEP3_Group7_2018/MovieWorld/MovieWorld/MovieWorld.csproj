@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14A34E8C-C32C-42FF-BF61-87DB4FFEEEF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MovieWorld</RootNamespace>
+    <AssemblyName>MovieWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>video-5-24.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.5.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.5.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Action.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Action.Designer.cs">
+      <DependentUpon>Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adventure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adventure.Designer.cs">
+      <DependentUpon>Adventure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyTicket.Designer.cs">
+      <DependentUpon>BuyTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comedy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comedy.Designer.cs">
+      <DependentUpon>Comedy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageUs.Designer.cs">
+      <DependentUpon>MessageUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crime.Designer.cs">
+      <DependentUpon>Crime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Drama.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drama.Designer.cs">
+      <DependentUpon>Drama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horror.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Horror.Designer.cs">
+      <DependentUpon>Horror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs" />
+    <Compile Include="Movie.cs" />
+    <Compile Include="MovieDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieDetail.Designer.cs">
+      <DependentUpon>MovieDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoviePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllGenres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllGenres.Designer.cs">
+      <DependentUpon>AllGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieList.cs" />
+    <Compile Include="PrintableTicket.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayMovie.Designer.cs">
+      <DependentUpon>PlayMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="Subscribe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscribe.Designer.cs">
+      <DependentUpon>Subscribe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Action.resx">
+      <DependentUpon>Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adventure.resx">
+      <DependentUpon>Adventure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyTicket.resx">
+      <DependentUpon>BuyTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comedy.resx">
+      <DependentUpon>Comedy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageUs.resx">
+      <DependentUpon>MessageUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crime.resx">
+      <DependentUpon>Crime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drama.resx">
+      <DependentUpon>Drama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horror.resx">
+      <DependentUpon>Horror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllGenres.resx">
+      <DependentUpon>AllGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieDetail.resx">
+      <DependentUpon>MovieDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayMovie.resx">
+      <DependentUpon>PlayMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscribe.resx">
+      <DependentUpon>Subscribe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popcorn-576599_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-multi-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventures-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comedy-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crime-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horror-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drama-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comedy-2-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-16 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-2-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smallfoot-2018-movie-poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-window-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-window-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand-24 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-window-24 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message-2-24.png" />
+    <Content Include="video-5-24.ico" />
+    <None Include="Resources\Taha.jpg" />
+    <None Include="Resources\video-add-241.png" />
+    <None Include="Resources\video-remove-24.png" />
+    <None Include="Resources\video-add-24.png" />
+    <None Include="Resources\media-pause-242.png" />
+    <None Include="Resources\play-4-24 %281%29 - Copy.png" />
+    <None Include="Resources\media-pause-241.png" />
+    <None Include="Resources\expand-24 %282%291.png" />
+    <None Include="Resources\close-window-24 %281%292.png" />
+    <None Include="Resources\close-window-24 %282%291.png" />
+    <None Include="Resources\close-window-24 %281%291.png" />
+    <None Include="Resources\close-window-241.png" />
+    <None Include="Resources\video-multi-241.png" />
+    <None Include="Resources\popcorn-576599_960_7201.png" />
+    <None Include="Resources\power-241.png" />
+    <None Include="Resources\login-241.png" />
+    <None Include="Resources\info-2-241.png" />
+    <None Include="Resources\horror-241.png" />
+    <None Include="Resources\drama-241.png" />
+    <None Include="Resources\crime-241.png" />
+    <None Include="Resources\comedy-2-241.png" />
+    <None Include="Resources\adventures-241.png" />
+    <None Include="Resources\action-241.png" />
+    <None Include="Resources\close-window-24 %281%293.png" />
+    <None Include="Resources\contacts-24.png" />
+    <None Include="Resources\contacts-16.png" />
+    <None Include="Resources\contacts-161.png" />
+    <None Include="Resources\key-16.png" />
+    <None Include="Resources\logout-24.png" />
+    <None Include="Resources\Balkis.jpg" />
+    <None Include="Resources\Fadi.jpg" />
+    <Content Include="Resources\media-pause-24.png" />
+    <None Include="Resources\Oskars.jpg" />
+    <None Include="Resources\Nadeem.jpg" />
+    <Content Include="Resources\play-4-24 %281%29.png" />
+    <Content Include="Resources\play-4-24.png" />
+    <Content Include="Resources\play-5-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

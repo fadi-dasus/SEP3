@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MovieWorld.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="moviedbConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=dbserversep3.database.windows.net;Initial Catalog=moviedb;Persist Security Info=True;User ID=dbserveradmin@dbserversep3;Password=n5*SFSVSSG&amp;amp;1!x&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=dbserversep3.database.windows.net;Initial Catalog=moviedb;Persist Security Info=True;User ID=dbserveradmin@dbserversep3;Password=n5*SFSVSSG&amp;1!x</Value>
+    </Setting>
+    <Setting Name="movieworlddbConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=dbserversep3.database.windows.net;Initial Catalog=movieworlddb;Persist Security Info=True;User ID=dbserveradmin@dbserversep3;Password=n5*SFSVSSG&amp;amp;1!x&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=dbserversep3.database.windows.net;Initial Catalog=movieworlddb;Persist Security Info=True;User ID=dbserveradmin@dbserversep3;Password=n5*SFSVSSG&amp;1!x</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
